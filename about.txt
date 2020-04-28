@@ -1,0 +1,30 @@
+#React Native
+##Variaveis ubuntu
+vim $HOME/.profile <- Add
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+source .profile    <- Reload
+echo $ANDROID_HOME <- Verify
+
+##Comandos
+react-native init Instalura --version 0.60.4 <- Cria o projeto
+react-native run-android	<- Instala no celular Android
+react-native start 		    <- Iniciar
+code .                    <- Abre o Visual Studio Code na pasta desejada
+
+##Rodando no dispositivo via USB
+set REACT_NATIVE_PACKAGER_HOSTNAME='192.168.42.143' <- Seta o IP do servidor React Native
+Se continuar o erro reiniciar o PC
+sudo apt install adb
+adb shell input keyevent 82 <- Hot Reload, não deu muito certo, precisei parar e ligar o react para funcionar.
+
+##Geral
+app.js - Salva o nome do Applicativo
+
+##Backend - Serviço Nodejs - porta 3030
+cd backend
+npm install
+npm start
+http://localhost:3030/feed
