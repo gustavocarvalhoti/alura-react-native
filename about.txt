@@ -13,6 +13,10 @@ react-native init Instalura --version 0.60.4 <- Cria o projeto
 react-native run-android	<- Instala no celular Android
 react-native start 		    <- Iniciar
 code .                    <- Abre o Visual Studio Code na pasta desejada
+yarn add @react-native-community/async-storage <- Storage
+yarn add react-navigation <- Navegação - https://reactnavigation.org/docs/getting-started
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view <- Dependencias do navegation
+yarn add react-navigation-stack <- Para criar a pilha de telas
 
 ##Rodando no dispositivo via USB
 set REACT_NATIVE_PACKAGER_HOSTNAME='192.168.42.143' <- Seta o IP do servidor React Native
